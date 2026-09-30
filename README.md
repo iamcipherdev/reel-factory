@@ -12,6 +12,13 @@ tech-daily videos. 100% free stack, no paid APIs.
 > ```
 > No key? No problem — render with your own script via `--script-file`.
 
+## 🎬 Demo
+
+This reel was made **by the tool itself** (trending story: *"An AI agent just
+deleted 48,000 files"*) — click to watch:
+
+[![Reel Factory demo](demo/thumbnail.jpg)](https://github.com/iamcipherdev/reel-factory/blob/main/demo/demo-reel.mp4)
+
 ## How it works
 
 ```
