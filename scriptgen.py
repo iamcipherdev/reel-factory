@@ -54,10 +54,18 @@ def generate(article_text, cta="@createbycipher"):
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         raise RuntimeError(
-            "GEMINI_API_KEY is not set.\n"
-            "Get a free key at https://aistudio.google.com (Google AI Studio),\n"
-            "then run:  export GEMINI_API_KEY='your-key'\n"
-            "Or skip auto-scripting with --script-file <file>.")
+            "\n"
+            "  🔑  BRING YOUR OWN API KEY\n"
+            "  ─────────────────────────\n"
+            "  Reel Factory is 100% free — but the AI script-writer needs\n"
+            "  YOUR OWN free Gemini API key (takes 2 minutes):\n"
+            "\n"
+            "    1. Go to https://aistudio.google.com\n"
+            "    2. Click 'Get API Key' → create one (free, no card needed)\n"
+            "    3. Run:  export GEMINI_API_KEY='paste-your-key-here'\n"
+            "\n"
+            "  No key? You can still render with your own script:\n"
+            "    python factory.py --script-file myscript.txt\n")
     from google import genai
     client = genai.Client(api_key=key)
     resp = client.models.generate_content(

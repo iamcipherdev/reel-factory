@@ -4,6 +4,14 @@ Turn a URL or topic into a finished **motion-graphics reel** (1080×1920 MP4)
 — the same cream-background, bold-headline, yellow-marker style as the
 tech-daily videos. 100% free stack, no paid APIs.
 
+> 🔑 **BRING YOUR OWN API KEY** — the AI script-writer runs on **your own free
+> Gemini API key** (2 minutes, no credit card). Get one at
+> **https://aistudio.google.com** → *Get API Key*, then:
+> ```bash
+> export GEMINI_API_KEY='paste-your-key-here'
+> ```
+> No key? No problem — render with your own script via `--script-file`.
+
 ## How it works
 
 ```
